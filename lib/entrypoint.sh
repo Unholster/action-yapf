@@ -17,8 +17,23 @@ BRANCH="$GITHUB_HEAD_REF"
 echo "### Branch: $BRANCH"
 git checkout $BRANCH
 
-ls ..
-yapf --recursive -i  --style ./lib/.style.yapf .
+yapf --recursive -i  --style='{ \
+based_on_style: pep8, \
+BLANK_LINE_BEFORE_NESTED_CLASS_OR_DEF: True, \
+BLANK_LINES_AROUND_TOP_LEVEL_DEFINITION: 2, \
+INDENT_DICTIONARY_VALUE: True, \
+SPLIT_ALL_TOP_LEVEL_COMMA_SEPARATED_VALUES: True, \
+SPLIT_BEFORE_ARITHMETIC_OPERATOR: True, \
+SPLIT_BEFORE_DOT: True, \
+SPLIT_BEFORE_EXPRESSION_AFTER_OPENING_PAREN: True, \
+SPLIT_BEFORE_LOGICAL_OPERATOR: True, \
+SPLIT_COMPLEX_COMPREHENSION: true, \
+}' \
+--exclude '*/migrations/*.py' \
+--exclude '*_settings.py' \
+--exclude '*/settings.py' \
+--exclude '*/manage.py' \
+.
 
 # Delay the comment to regroup the commits
 if ! git diff-index --quiet HEAD --; then CHANGES=true ; fi
