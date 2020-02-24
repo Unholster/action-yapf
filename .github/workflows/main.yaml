@@ -1,0 +1,14 @@
+name: Yapf Formatter
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    name: Yapf Code Formatter
+    runs-on: ubuntu-latest
+    steps:
+    - name: Yapf Code Formatter
+      uses: Unholster/action-yapf@action-test
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

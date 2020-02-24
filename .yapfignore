@@ -1,0 +1,4 @@
+*/migrations/*.py
+*_settings.py
+*/settings.py
+*/manage.py
