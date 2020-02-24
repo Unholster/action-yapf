@@ -1,3 +1,3 @@
 # action-yapf
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/Unholster/action-yapf/blob/master/Screenshot.png)
