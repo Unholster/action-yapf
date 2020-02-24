@@ -17,6 +17,7 @@ BRANCH="$GITHUB_HEAD_REF"
 echo "### Branch: $BRANCH"
 git checkout $BRANCH
 
+ls
 yapf --recursive -i  --style ./lib/.style.yapf .
 
 # Delay the comment to regroup the commits
