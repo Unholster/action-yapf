@@ -19,7 +19,6 @@ git checkout $BRANCH
 
 yapf
 ls
-ls ..
 
 # Delay the comment to regroup the commits
 if ! git diff-index --quiet HEAD --; then CHANGES=true ; fi
