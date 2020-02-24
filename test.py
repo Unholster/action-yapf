@@ -6,7 +6,7 @@ a = {'a': 'b', 'c': 'd', 'e': 'f'}
 for i in range(2):
     foo = {'asd': 'fdmagklfdngklfndgklndfglk', 'ert': 'fghertsdf', 'poi': 'cvbsdfwer', 'rty': 'dfgwerasd'}
 
-foo = ['asd', 'qweasdzxc', 'ert', 'fghertsdf', 'poi', 'cvbsdfwer', 'rty', 'dfgwerasdadsfdsffghfghfgjfgjsdaf'].appdend('asdkjgbdjksafnakjdsnvjkasbgkjdhfdshfoidasbgnvoidsubvdjsfnvoidsfguohadsgubvdafskjgnijdsbaiujgbn')
+foo = ['aaaaaa', 'aaaaaa', 'aaaaaa', 'aaaaaa', 'aaaaaa', 'aaaaaa',]
 
 foo = {'asd', 'qweasdzxc', 'ert', 'fghertsdf', 'poi', 'cvbsdfwer', 'rty', 'dfgwerasd'}
 
