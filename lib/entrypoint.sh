@@ -17,7 +17,9 @@ BRANCH="$GITHUB_HEAD_REF"
 echo "### Branch: $BRANCH"
 git checkout $BRANCH
 
-yapf --recursive ./
+yapf
+ls
+ls ..
 
 # Delay the comment to regroup the commits
 if ! git diff-index --quiet HEAD --; then CHANGES=true ; fi
