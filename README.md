@@ -2,7 +2,7 @@
 
 This Github Action performs a code reformatting using yapf on Pull requests. If a commit contains non-yapf formatted code, it will automatically run yapf and warn the user to do it beforehand.
 
-![Screenshot](https://github.com/Unholster/action-yapf/blob/master/Screenshot.png)
+![Screenshot](https://github.com/Unholster/action-yapf/blob/master/Comment.png)
 
 ## Usage
 
