@@ -26,6 +26,7 @@ INDENT_DICTIONARY_VALUE: True, \
 EACH_DICT_ENTRY_ON_SEPARATE_LINE: False, \
 SPLIT_ALL_TOP_LEVEL_COMMA_SEPARATED_VALUES: True, \
 SPLIT_BEFORE_ARITHMETIC_OPERATOR: True, \
+SPLIT_BEFORE_CLOSING_BRACKET: True \
 SPLIT_BEFORE_DOT: True, \
 SPLIT_BEFORE_FIRST_ARGUMENT: True, \
 SPLIT_BEFORE_LOGICAL_OPERATOR: True, \
@@ -35,6 +36,8 @@ SPLIT_COMPLEX_COMPREHENSION: true, \
 --exclude '*_settings.py' \
 --exclude '*/settings.py' \
 --exclude '*/manage.py' \
+--exclude 'celery.py' \
+--exclude '__init__.py' \
 .
 
 # Delay the comment to regroup the commits
