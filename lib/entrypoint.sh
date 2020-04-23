@@ -5,7 +5,7 @@ if ! git status > /dev/null 2>&1 ; then git init ; fi
 
 REMOTE_TOKEN_URL="https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 if ! git remote | grep "origin" > /dev/null 2>&1
-then 
+then
   echo "### Adding git remote..."
   git remote add origin $REMOTE_TOKEN_URL
   git fetch
@@ -22,7 +22,6 @@ based_on_style: pep8, \
 BLANK_LINE_BEFORE_NESTED_CLASS_OR_DEF: True, \
 BLANK_LINES_AROUND_TOP_LEVEL_DEFINITION: 2, \
 COLUMN_LIMIT: 100, \
-INDENT_DICTIONARY_VALUE: True, \
 EACH_DICT_ENTRY_ON_SEPARATE_LINE: False, \
 SPLIT_ALL_TOP_LEVEL_COMMA_SEPARATED_VALUES: True, \
 SPLIT_BEFORE_ARITHMETIC_OPERATOR: True, \
