@@ -30,6 +30,7 @@ SPLIT_BEFORE_DOT: True, \
 SPLIT_BEFORE_FIRST_ARGUMENT: True, \
 SPLIT_BEFORE_LOGICAL_OPERATOR: True, \
 SPLIT_COMPLEX_COMPREHENSION: true, \
+DEDENT_CLOSING_BRACKETS: true
 }' \
 --exclude '*/migrations/*.py' \
 --exclude '*_settings.py' \
