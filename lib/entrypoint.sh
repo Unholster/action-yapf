@@ -3,6 +3,8 @@ set -e
 
 if ! git status > /dev/null 2>&1 ; then git init ; fi
 
+git config --global --add safe.directory /github/workspace
+
 REMOTE_TOKEN_URL="https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 if ! git remote | grep "origin" > /dev/null 2>&1
 then
